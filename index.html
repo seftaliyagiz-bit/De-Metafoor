@@ -94,6 +94,128 @@ const BG_COLORS = {
   slate: ['#0c1118', '#16202e', '#1e2d3f']
 };
 
+/* ─── translations ───────────────────────────────────────────── */
+const T = {
+  nl: {
+    nav_overons: 'Over ons',
+    nav_uren: 'Uren',
+    nav_galerij: 'Galerij',
+    nav_contact: 'Contact',
+    hero_tagline: 'Gezelligheid in het hart van Leuven',
+    hero_cta: 'Ontdek ons menu',
+    hero_open: 'Vandaag open · 11:00 – 02:00',
+    oo_label: 'Over Ons',
+    oo_h2a: 'Meer dan een café.',
+    oo_h2b: 'Een plek.',
+    oo_p1: 'Café De Metafoor opende zijn deuren in 2009 in het hart van Leuven. Wat begon als een kleine kroeg op de Naamsestraat groeide uit tot een vaste waarde in het Leuvense nachtleven — een plek waar studenten, locals en doorreizigers samenkomen.',
+    oo_p2: 'De naam is geen toeval. Een metafoor zegt iets anders dan het letterlijk betekent. Zo ook dit café: het ziet eruit als een bruine kroeg, maar het is eigenlijk een tweede woonkamer.',
+    oo_pillar1_label: 'Sfeer',
+    oo_pillar1_body: 'Elke avond anders, altijd thuis. Dimme lichten, houten tafels, vrienden die te lang blijven.',
+    oo_pillar2_label: 'Bier',
+    oo_pillar2_body: 'Een zorgvuldig samengestelde kaart van Belgische ambachtsbieren — van geuze tot tripel.',
+    oo_pillar3_label: 'Muziek',
+    oo_pillar3_body: 'Jazz op dinsdag, vinylnachten op vrijdag. Geen algorithms, alleen kuratoren.',
+    oh_label: 'Openingsuren',
+    oh_h2a: 'Wanneer vind je',
+    oh_h2b: 'ons thuis?',
+    oh_today: 'Vandaag',
+    oh_days: ['Maandag','Dinsdag','Woensdag','Donderdag','Vrijdag','Zaterdag','Zondag'],
+    oh_card1_title: 'Keuken',
+    oh_card1_body: 'Kleine hapjes & snacks beschikbaar tot middernacht in het weekend.',
+    oh_card2_title: 'Reservaties',
+    oh_card2_body: 'Voor groepen van 8+ personen raden wij aan vooraf te reserveren.',
+    oh_card3_title: 'Terrasse',
+    oh_card3_body: 'Ons zomerterras op de Naamsestraat is open van april tot oktober.',
+    gal_label: 'Galerij',
+    gal_h2a: 'Sfeer in',
+    gal_h2b: 'beelden',
+    gal_caption: 'Eigen fotografie & sfeerbeelden uit het café',
+    gal_photos: [
+      { label: 'Interieur', desc: 'Warm licht, donker hout' },
+      { label: 'Bier', desc: 'Ambachtelijk & lokaal' },
+      { label: 'Toog', desc: 'Hart van het café' },
+      { label: 'Terras', desc: 'Zomerse avonden' },
+      { label: 'Sfeer', desc: 'Gezelligheid & warmte' },
+      { label: 'Gezelschap', desc: 'Vaste gasten & vrienden' }
+    ],
+    con_label: 'Contact',
+    con_h2a: 'Kom langs,',
+    con_h2b: 'of neem contact op.',
+    con_addr_label: 'Adres',
+    con_tel_label: 'Telefoon',
+    con_form_title: 'Stuur een bericht',
+    con_name_label: 'Naam',
+    con_name_ph: 'Jouw naam',
+    con_email_ph: 'jouw@email.be',
+    con_msg_label: 'Bericht',
+    con_msg_ph: 'Jouw bericht...',
+    con_submit: 'Verstuur bericht →',
+    con_thanks: 'Bedankt!',
+    con_thanks_body: 'We hebben je bericht ontvangen en nemen zo snel mogelijk contact met je op.',
+    con_new_msg: 'Nieuw bericht',
+    con_map_open: 'Openen →',
+  },
+  en: {
+    nav_overons: 'About',
+    nav_uren: 'Hours',
+    nav_galerij: 'Gallery',
+    nav_contact: 'Contact',
+    hero_tagline: 'Cosiness in the heart of Leuven',
+    hero_cta: 'Discover our menu',
+    hero_open: 'Open today · 11:00 – 02:00',
+    oo_label: 'About Us',
+    oo_h2a: 'More than a café.',
+    oo_h2b: 'A place.',
+    oo_p1: "Café De Metafoor opened its doors in 2009 in the heart of Leuven. What started as a small pub on the Naamsestraat grew into a cornerstone of Leuven's nightlife — a place where students, locals and travellers come together.",
+    oo_p2: 'The name is no coincidence. A metaphor says something other than what it literally means. So too this café: it looks like a brown pub, but it is really a second living room.',
+    oo_pillar1_label: 'Atmosphere',
+    oo_pillar1_body: 'Different every evening, always home. Dim lights, wooden tables, friends who stay too long.',
+    oo_pillar2_label: 'Beer',
+    oo_pillar2_body: 'A carefully curated selection of Belgian craft beers — from gueuze to tripel.',
+    oo_pillar3_label: 'Music',
+    oo_pillar3_body: 'Jazz on Tuesday, vinyl nights on Friday. No algorithms, only curators.',
+    oh_label: 'Opening Hours',
+    oh_h2a: 'When will you',
+    oh_h2b: 'find us home?',
+    oh_today: 'Today',
+    oh_days: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+    oh_card1_title: 'Kitchen',
+    oh_card1_body: 'Small bites & snacks available until midnight on weekends.',
+    oh_card2_title: 'Reservations',
+    oh_card2_body: 'For groups of 8+ people, we recommend booking in advance.',
+    oh_card3_title: 'Terrace',
+    oh_card3_body: 'Our summer terrace on the Naamsestraat is open from April to October.',
+    gal_label: 'Gallery',
+    gal_h2a: 'Ambiance',
+    gal_h2b: 'in images',
+    gal_caption: 'Our own photography & atmosphere shots from the café',
+    gal_photos: [
+      { label: 'Interior', desc: 'Warm light, dark wood' },
+      { label: 'Beer', desc: 'Artisanal & local' },
+      { label: 'Bar', desc: 'Heart of the café' },
+      { label: 'Terrace', desc: 'Summer evenings' },
+      { label: 'Ambiance', desc: 'Cosiness & warmth' },
+      { label: 'Company', desc: 'Regulars & friends' }
+    ],
+    con_label: 'Contact',
+    con_h2a: 'Come by,',
+    con_h2b: 'or get in touch.',
+    con_addr_label: 'Address',
+    con_tel_label: 'Phone',
+    con_form_title: 'Send a message',
+    con_name_label: 'Name',
+    con_name_ph: 'Your name',
+    con_email_ph: 'your@email.com',
+    con_msg_label: 'Message',
+    con_msg_ph: 'Your message...',
+    con_submit: 'Send message →',
+    con_thanks: 'Thank you!',
+    con_thanks_body: 'We have received your message and will get back to you as soon as possible.',
+    con_new_msg: 'New message',
+    con_map_open: 'Open →',
+  }
+};
+
 function useIsMobile() {
   const [mobile, setMobile] = useState(() => window.innerWidth <= 768);
   useEffect(() => {
@@ -166,22 +288,39 @@ function Divider({ accent }) {
 }
 
 /* ─── NAV ────────────────────────────────────────────────────── */
-function Nav({ accent }) {
+function Nav({ accent, lang, setLang }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const mobile = useIsMobile();
+  const t = T[lang];
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 60);
     window.addEventListener('scroll', fn, { passive: true });
     return () => window.removeEventListener('scroll', fn);
   }, []);
   const links = [
-  { href: '#over-ons', label: 'Over ons' },
-  { href: '#openingsuren', label: 'Uren' },
-  { href: '#galerij', label: 'Galerij' },
-  { href: '#contact', label: 'Contact' }];
+  { href: '#over-ons', label: t.nav_overons },
+  { href: '#openingsuren', label: t.nav_uren },
+  { href: '#galerij', label: t.nav_galerij },
+  { href: '#contact', label: t.nav_contact }];
 
   const navBg = scrolled || menuOpen ? 'oklch(0.11 0.025 50 / 0.96)' : 'transparent';
+
+  const LangToggle = ({ style }) => (
+    <div style={{ display: 'flex', gap: 4, alignItems: 'center', ...style }}>
+      {['nl','en'].map((l) =>
+      <button key={l} onClick={() => setLang(l)} style={{
+        background: l === lang ? `oklch(0.62 0.15 ${accent})` : 'transparent',
+        color: l === lang ? '#1a0f0a' : 'oklch(0.65 0.03 75)',
+        border: `1px solid oklch(0.62 0.15 ${accent} / ${l === lang ? 1 : 0.4})`,
+        borderRadius: 2, padding: '3px 8px', cursor: 'pointer', fontSize: 11,
+        fontFamily: "'DM Sans',sans-serif", fontWeight: 500, letterSpacing: '0.1em',
+        textTransform: 'uppercase', transition: 'all 0.2s'
+      }}>{l.toUpperCase()}</button>
+      )}
+    </div>
+  );
+
   return (
     <nav style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
@@ -197,7 +336,7 @@ function Nav({ accent }) {
           fontSize: 20, color: `oklch(0.62 0.15 ${accent})`, letterSpacing: '-0.01em'
         }}>De Metafoor</span>
         {!mobile &&
-        <div style={{ display: 'flex', gap: 32 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
             {links.map((l) =>
           <a key={l.href} href={l.href} style={{
             fontFamily: "'DM Sans',sans-serif", fontWeight: 400, fontSize: 13,
@@ -208,26 +347,30 @@ function Nav({ accent }) {
           onMouseLeave={(e) => e.target.style.color = 'oklch(0.72 0.03 75)'}>
             {l.label}</a>
           )}
+          <LangToggle />
           </div>
         }
         {mobile &&
-        <button onClick={() => setMenuOpen((o) => !o)} style={{
-          background: 'none', border: 'none', cursor: 'pointer', padding: 8,
-          display: 'flex', flexDirection: 'column', gap: 5
-        }}>
-            {[0, 1, 2].map((i) =>
-          <div key={i} style={{
-            width: 22, height: 2, background: 'oklch(0.72 0.03 75)',
-            transition: 'transform 0.25s, opacity 0.25s',
-            transform: menuOpen ?
-            i === 0 ? 'rotate(45deg) translate(5px,5px)' :
-            i === 2 ? 'rotate(-45deg) translate(5px,-5px)' :
-            'scaleX(0)' :
-            'none',
-            opacity: menuOpen && i === 1 ? 0 : 1
-          }} />
-          )}
-          </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <LangToggle />
+          <button onClick={() => setMenuOpen((o) => !o)} style={{
+            background: 'none', border: 'none', cursor: 'pointer', padding: 8,
+            display: 'flex', flexDirection: 'column', gap: 5
+          }}>
+              {[0, 1, 2].map((i) =>
+            <div key={i} style={{
+              width: 22, height: 2, background: 'oklch(0.72 0.03 75)',
+              transition: 'transform 0.25s, opacity 0.25s',
+              transform: menuOpen ?
+              i === 0 ? 'rotate(45deg) translate(5px,5px)' :
+              i === 2 ? 'rotate(-45deg) translate(5px,-5px)' :
+              'scaleX(0)' :
+              'none',
+              opacity: menuOpen && i === 1 ? 0 : 1
+            }} />
+            )}
+            </button>
+          </div>
         }
       </div>
       {mobile && menuOpen &&
@@ -248,7 +391,7 @@ function Nav({ accent }) {
 }
 
 /* ─── HERO ───────────────────────────────────────────────────── */
-function Hero({ tweaks }) {
+function Hero({ tweaks, lang }) {
   const [hov, setHov] = useState(false);
   const [mounted, setMounted] = useState(false);
   useEffect(() => {const t = setTimeout(() => setMounted(true), 60);return () => clearTimeout(t);}, []);
@@ -259,6 +402,10 @@ function Hero({ tweaks }) {
   const accentMid = `oklch(0.62 0.15 ${hue} / 0.55)`;
   const accentGlow = `oklch(0.62 0.15 ${hue} / 0.40)`;
   const [bg1, bg2, bg3] = BG_COLORS[tweaks.bgTone] || BG_COLORS.brown;
+  const tr = T[lang];
+
+  const tagline = lang === 'nl' ? tweaks.tagline : tr.hero_tagline;
+  const ctaLabel = lang === 'nl' ? tweaks.ctaLabel : tr.hero_cta;
 
   const d = (s) => ({
     opacity: mounted ? 1 : 0,
@@ -345,7 +492,7 @@ function Hero({ tweaks }) {
           fontWeight: 400, fontSize: 'clamp(17px,2.4vw,22px)', lineHeight: 1.6,
           color: 'oklch(0.78 0.03 75)', maxWidth: 420, position: 'relative', zIndex: 3,
           textWrap: 'pretty', marginBottom: tweaks.showHours ? 16 : 36 }}>
-          "{tweaks.tagline}"
+          "{tagline}"
         </p>
 
         {tweaks.showHours &&
@@ -357,7 +504,7 @@ function Hero({ tweaks }) {
             boxShadow: `0 0 8px ${accentGlow}`, animation: 'pulseGlow 2s ease-in-out infinite' }} />
             <span style={{ fontFamily: "'DM Sans',sans-serif", fontWeight: 300, fontSize: 12,
             letterSpacing: '0.06em', color: 'oklch(0.65 0.03 75)' }}>
-              Vandaag open · 11:00 – 02:00
+              {tr.hero_open}
             </span>
           </div>
         }
@@ -373,7 +520,7 @@ function Hero({ tweaks }) {
           cursor: 'pointer', transition: 'all 0.28s ease', outline: 'none',
           boxShadow: hov ? `0 8px 40px ${accentGlow}` : `0 0 24px oklch(0.62 0.15 ${hue} / 0.1)`
         }}>
-          {tweaks.ctaLabel}
+          {ctaLabel}
           <span style={{ display: 'inline-block', marginLeft: 10,
             transition: 'transform 0.28s ease', transform: hov ? 'translateX(4px)' : 'translateX(0)' }}>→</span>
         </button>
@@ -426,15 +573,16 @@ function Hero({ tweaks }) {
 }
 
 /* ─── OVER ONS ───────────────────────────────────────────────── */
-function OverOns({ accent }) {
+function OverOns({ accent, lang }) {
   const [ref, vis] = useInView();
   const mobile = useIsMobile();
   const hue = accent;
+  const tr = T[lang];
 
   const pillars = [
-  { label: 'Sfeer', body: 'Elke avond anders, altijd thuis. Dimme lichten, houten tafels, vrienden die te lang blijven.' },
-  { label: 'Bier', body: 'Een zorgvuldig samengestelde kaart van Belgische ambachtsbieren — van geuze tot tripel.' },
-  { label: 'Muziek', body: 'Jazz op dinsdag, vinylnachten op vrijdag. Geen algorithms, alleen kuratoren.' }];
+  { label: tr.oo_pillar1_label, body: tr.oo_pillar1_body },
+  { label: tr.oo_pillar2_label, body: tr.oo_pillar2_body },
+  { label: tr.oo_pillar3_label, body: tr.oo_pillar3_body }];
 
 
   return (
@@ -459,28 +607,24 @@ function OverOns({ accent }) {
         {/* left: text */}
         <div>
           <div style={fadeUp(vis, 0)}>
-            <SectionLabel accent={hue}>Over Ons</SectionLabel>
+            <SectionLabel accent={hue}>{tr.oo_label}</SectionLabel>
           </div>
           <h2 style={{ ...fadeUp(vis, 0.1),
             fontFamily: "'Playfair Display',serif", fontWeight: 700,
             fontSize: 'clamp(36px,4.5vw,58px)', lineHeight: 1.1, letterSpacing: '-0.02em',
             color: 'oklch(0.92 0.025 75)', marginBottom: 28, textWrap: 'balance' }}>
-            Meer dan een café.<br />
-            <span style={{ fontStyle: 'italic', color: `oklch(0.62 0.15 ${hue})` }}>Een plek.</span>
+            {tr.oo_h2a}<br />
+            <span style={{ fontStyle: 'italic', color: `oklch(0.62 0.15 ${hue})` }}>{tr.oo_h2b}</span>
           </h2>
           <p style={{ ...fadeUp(vis, 0.2),
             fontFamily: "'DM Sans',sans-serif", fontWeight: 300, fontSize: 17, lineHeight: 1.8,
             color: 'oklch(0.68 0.03 75)', maxWidth: 480, marginBottom: 32, textWrap: 'pretty' }}>
-            Café De Metafoor opende zijn deuren in 2009 in het hart van Leuven. Wat begon als een kleine kroeg 
-            op de Naamsestraat groeide uit tot een vaste waarde in het Leuvense nachtleven — een plek waar 
-            studenten, locals en doorreizigers samenkomen.
+            {tr.oo_p1}
           </p>
           <p style={{ ...fadeUp(vis, 0.28),
             fontFamily: "'DM Sans',sans-serif", fontWeight: 300, fontSize: 17, lineHeight: 1.8,
             color: 'oklch(0.68 0.03 75)', maxWidth: 480, textWrap: 'pretty' }}>
-            De naam is geen toeval. Een metafoor zegt iets anders dan het letterlijk betekent. 
-            Zo ook dit café: het ziet eruit als een bruine kroeg, maar het is eigenlijk een 
-            tweede woonkamer.
+            {tr.oo_p2}
           </p>
         </div>
 
@@ -516,25 +660,23 @@ function OverOns({ accent }) {
 }
 
 /* ─── OPENINGSUREN ───────────────────────────────────────────── */
-function Openingsuren({ accent }) {
+function Openingsuren({ accent, lang }) {
   const [ref, vis] = useInView();
   const mobile = useIsMobile();
   const hue = accent;
+  const tr = T[lang];
 
-  const days = [
-  { day: 'Maandag', hours: '11:00 – 02:00', open: true },
-  { day: 'Dinsdag', hours: '11:00 – 02:00', open: true },
-  { day: 'Woensdag', hours: '11:00 – 02:00', open: true },
-  { day: 'Donderdag', hours: '11:00 – 02:00', open: true },
-  { day: 'Vrijdag', hours: '11:00 – 02:00', open: true },
-  { day: 'Zaterdag', hours: '11:00 – 02:00', open: true },
-  { day: 'Zondag', hours: '11:00 – 02:00', open: true }];
-
+  const days = tr.oh_days.map((day) => ({ day, hours: '11:00 – 02:00', open: true }));
 
   // today
   const todayIdx = new Date().getDay(); // 0=Sun
   const mapIdx = [6, 0, 1, 2, 3, 4, 5]; // map JS day to our array
   const todayRow = mapIdx[todayIdx];
+
+  const cards = [
+  { title: tr.oh_card1_title, body: tr.oh_card1_body },
+  { title: tr.oh_card2_title, body: tr.oh_card2_body },
+  { title: tr.oh_card3_title, body: tr.oh_card3_body }];
 
   return (
     <section id="openingsuren" data-screen-label="Openingsuren" style={{
@@ -554,21 +696,20 @@ function Openingsuren({ accent }) {
         {/* left: schedule */}
         <div>
           <div style={fadeUp(vis, 0)}>
-            <SectionLabel accent={hue}>Openingsuren</SectionLabel>
+            <SectionLabel accent={hue}>{tr.oh_label}</SectionLabel>
           </div>
           <h2 style={{ ...fadeUp(vis, 0.1),
             fontFamily: "'Playfair Display',serif", fontWeight: 700,
             fontSize: 'clamp(32px,4vw,52px)', lineHeight: 1.1,
             color: 'oklch(0.92 0.025 75)', marginBottom: 40, letterSpacing: '-0.02em' }}>
-            Wanneer vind je<br />
-            <span style={{ fontStyle: 'italic', color: `oklch(0.62 0.15 ${hue})` }}>ons thuis?</span>
+            {tr.oh_h2a}<br />
+            <span style={{ fontStyle: 'italic', color: `oklch(0.62 0.15 ${hue})` }}>{tr.oh_h2b}</span>
           </h2>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
             {days.map((d, i) =>
             <div key={d.day} style={{ ...fadeUp(vis, 0.12 + i * 0.06),
               display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-              padding: '14px 0',
               borderBottom: '1px solid oklch(0.65 0.04 75 / 0.1)',
               borderTop: i === 0 ? '1px solid oklch(0.65 0.04 75 / 0.1)' : 'none',
               background: i === todayRow ? `oklch(0.62 0.15 ${hue} / 0.06)` : 'transparent',
@@ -588,7 +729,7 @@ function Openingsuren({ accent }) {
                   color: i === todayRow ? 'oklch(0.88 0.03 75)' : 'oklch(0.65 0.03 75)' }}>
                     {d.day}{i === todayRow && <span style={{ fontSize: 11, marginLeft: 8,
                     color: `oklch(0.62 0.15 ${hue})`, letterSpacing: '0.12em',
-                    textTransform: 'uppercase' }}>Vandaag</span>}
+                    textTransform: 'uppercase' }}>{tr.oh_today}</span>}
                   </span>
                 </div>
                 <span style={{ fontFamily: "'DM Sans',sans-serif",
@@ -606,11 +747,7 @@ function Openingsuren({ accent }) {
 
         {/* right: info cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-          {[
-          { title: 'Keuken', body: 'Kleine hapjes & snacks beschikbaar tot middernacht in het weekend.' },
-          { title: 'Reservaties', body: 'Voor groepen van 8+ personen raden wij aan vooraf te reserveren.' },
-          { title: 'Terrasse', body: 'Ons zomerterras op de Naamsestraat is open van april tot oktober.' }].
-          map((card, i) =>
+          {cards.map((card, i) =>
           <div key={card.title} style={{ ...fadeUp(vis, 0.3 + i * 0.12),
             padding: '28px 32px',
             background: 'oklch(0.94 0.025 75 / 0.04)',
@@ -630,26 +767,28 @@ function Openingsuren({ accent }) {
 }
 
 /* ─── GALLERY ────────────────────────────────────────────────── */
-function Gallery({ accent }) {
+function Gallery({ accent, lang }) {
   const [ref, vis] = useInView(0.08);
   const [active, setActive] = useState(null);
   const mobile = useIsMobile();
   const hue = accent;
+  const tr = T[lang];
 
-  const photos = [
-  { id: 0, label: 'Interieur', desc: 'Warm licht, donker hout', w: 2, h: 1, tone: 'oklch(0.28 0.06 48)',
+  const photoBase = [
+  { id: 0, w: 2, h: 1, tone: 'oklch(0.28 0.06 48)',
     img: `uploads/Screenshot 2026-05-02 at 14.12.10.png`, pos: 'center center' },
-  { id: 1, label: 'Bier', desc: 'Ambachtelijk & lokaal', w: 1, h: 1, tone: 'oklch(0.22 0.05 52)',
+  { id: 1, w: 1, h: 1, tone: 'oklch(0.22 0.05 52)',
     img: `uploads/Screenshot 2026-05-02 at 14.13.09.png`, pos: 'center center' },
-  { id: 2, label: 'Toog', desc: 'Hart van het café', w: 1, h: 1, tone: 'oklch(0.20 0.04 44)',
+  { id: 2, w: 1, h: 1, tone: 'oklch(0.20 0.04 44)',
     img: `uploads/Screenshot 2026-05-02 at 14.13.34.png`, pos: 'center center' },
-  { id: 3, label: 'Terras', desc: 'Zomerse avonden', w: 1, h: 2, tone: 'oklch(0.18 0.05 56)',
+  { id: 3, w: 1, h: 2, tone: 'oklch(0.18 0.05 56)',
     img: `uploads/Screenshot 2026-05-02 at 14.11.19.png`, pos: 'center 40%' },
-  { id: 4, label: 'Sfeer', desc: 'Gezelligheid & warmte', w: 1, h: 1, tone: 'oklch(0.24 0.06 42)',
+  { id: 4, w: 1, h: 1, tone: 'oklch(0.24 0.06 42)',
     img: `https://images.unsplash.com/photo-1514362453360-8f94243c9996?w=800&q=80`, pos: 'center center' },
-  { id: 5, label: 'Gezelschap', desc: 'Vaste gasten & vrienden', w: 1, h: 1, tone: 'oklch(0.26 0.05 50)',
+  { id: 5, w: 1, h: 1, tone: 'oklch(0.26 0.05 50)',
     img: `https://images.unsplash.com/photo-1555658636-6e4a36218be7?w=800&q=80`, pos: 'center center' }];
 
+  const photos = photoBase.map((p, i) => ({ ...p, ...tr.gal_photos[i] }));
 
   return (
     <section id="galerij" data-screen-label="Galerij" style={{
@@ -659,20 +798,20 @@ function Gallery({ accent }) {
     }}>
       <div ref={ref} style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ ...fadeUp(vis, 0), marginBottom: 16 }}>
-          <SectionLabel accent={hue}>Galerij</SectionLabel>
+          <SectionLabel accent={hue}>{tr.gal_label}</SectionLabel>
         </div>
         <div style={{ display: 'flex', flexDirection: mobile ? 'column' : 'row', justifyContent: 'space-between', alignItems: mobile ? 'flex-start' : 'flex-end', marginBottom: 48, gap: mobile ? 12 : 0 }}>
           <h2 style={{ ...fadeUp(vis, 0.1),
             fontFamily: "'Playfair Display',serif", fontWeight: 700,
             fontSize: 'clamp(32px,4vw,52px)', lineHeight: 1.1, letterSpacing: '-0.02em',
             color: 'oklch(0.92 0.025 75)', textWrap: 'balance' }}>
-            Sfeer in<br />
-            <span style={{ fontStyle: 'italic', color: `oklch(0.62 0.15 ${hue})` }}>beelden</span>
+            {tr.gal_h2a}<br />
+            <span style={{ fontStyle: 'italic', color: `oklch(0.62 0.15 ${hue})` }}>{tr.gal_h2b}</span>
           </h2>
           <p style={{ ...fadeUp(vis, 0.15),
             fontFamily: "'DM Sans',sans-serif", fontWeight: 300, fontSize: 14,
             color: 'oklch(0.50 0.03 75)', maxWidth: 260, textAlign: 'right', lineHeight: 1.6 }}>
-            Eigen fotografie &amp; sfeerbeelden uit het café
+            {tr.gal_caption}
           </p>
         </div>
 
@@ -775,12 +914,13 @@ function Gallery({ accent }) {
 }
 
 /* ─── CONTACT ────────────────────────────────────────────────── */
-function Contact({ accent }) {
+function Contact({ accent, lang }) {
   const [ref, vis] = useInView();
   const [form, setForm] = useState({ naam: '', email: '', bericht: '' });
   const [sent, setSent] = useState(false);
   const mobile = useIsMobile();
   const hue = accent;
+  const tr = T[lang];
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -795,6 +935,12 @@ function Contact({ accent }) {
     color: 'oklch(0.85 0.02 75)', outline: 'none',
     transition: 'border-color 0.2s'
   };
+
+  const contactItems = [
+  { label: tr.con_addr_label, value: 'Parijsstraat 34, 3000 Leuven' },
+  { label: tr.con_tel_label, value: '+32 497 47 72 52' },
+  { label: 'Facebook', value: 'Café De Metafoor', href: 'https://www.facebook.com/pages/Metafoor/135530549837877' },
+  { label: 'TripAdvisor', value: 'Metafoor op TripAdvisor', href: 'https://www.tripadvisor.nl/Restaurant_Review-g188669-d3599522-Reviews-Metafoor-Leuven_Flemish_Brabant_Province.html' }];
 
   return (
     <section id="contact" data-screen-label="Contact" style={{
@@ -812,22 +958,17 @@ function Contact({ accent }) {
 
         {/* left */}
         <div>
-          <div style={fadeUp(vis, 0)}><SectionLabel accent={hue}>Contact</SectionLabel></div>
+          <div style={fadeUp(vis, 0)}><SectionLabel accent={hue}>{tr.con_label}</SectionLabel></div>
           <h2 style={{ ...fadeUp(vis, 0.1),
             fontFamily: "'Playfair Display',serif", fontWeight: 700,
             fontSize: 'clamp(32px,4vw,52px)', lineHeight: 1.1, letterSpacing: '-0.02em',
             color: 'oklch(0.92 0.025 75)', marginBottom: 36, textWrap: 'balance' }}>
-            Kom langs,<br />
-            <span style={{ fontStyle: 'italic', color: `oklch(0.62 0.15 ${hue})` }}>of neem contact op.</span>
+            {tr.con_h2a}<br />
+            <span style={{ fontStyle: 'italic', color: `oklch(0.62 0.15 ${hue})` }}>{tr.con_h2b}</span>
           </h2>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-            {[
-            { label: 'Adres', value: 'Parijsstraat 34, 3000 Leuven' },
-            { label: 'Telefoon', value: '+32 497 47 72 52' },
-            { label: 'Facebook', value: 'Café De Metafoor', href: 'https://www.facebook.com/pages/Metafoor/135530549837877' },
-            { label: 'TripAdvisor', value: 'Metafoor op TripAdvisor', href: 'https://www.tripadvisor.nl/Restaurant_Review-g188669-d3599522-Reviews-Metafoor-Leuven_Flemish_Brabant_Province.html' }].
-            map((item, i) =>
+            {contactItems.map((item, i) =>
             <div key={item.label} style={{ ...fadeUp(vis, 0.18 + i * 0.08),
               display: 'flex', gap: 16, alignItems: 'flex-start' }}>
                 <div style={{ width: 72, flexShrink: 0,
@@ -851,7 +992,7 @@ function Contact({ accent }) {
             )}
           </div>
 
-          {/* OpenStreetMap embed */}
+          {/* Google Maps embed */}
           <div style={{ ...fadeUp(vis, 0.5),
             marginTop: 40, borderRadius: 4, overflow: 'hidden',
             border: '1px solid oklch(0.65 0.04 75 / 0.14)',
@@ -862,7 +1003,7 @@ function Contact({ accent }) {
               style={{ display: 'block', border: 0, borderRadius: '12px' }}
               title="Kaart Parijsstraat 34, Leuven"
               allowFullScreen loading="lazy" />
-            
+
             <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0,
               padding: '8px 12px',
               background: 'oklch(0.11 0.03 50 / 0.85)', backdropFilter: 'blur(4px)',
@@ -876,7 +1017,7 @@ function Contact({ accent }) {
               style={{ fontFamily: "'DM Sans',sans-serif", fontWeight: 400, fontSize: 11,
                 letterSpacing: '0.1em', textTransform: 'uppercase',
                 color: `oklch(0.62 0.15 ${hue})`, textDecoration: 'none' }}>
-                Openen →
+                {tr.con_map_open}
               </a>
             </div>
           </div>
@@ -889,26 +1030,26 @@ function Contact({ accent }) {
             border: `1px solid oklch(0.62 0.15 ${hue} / 0.3)`,
             borderRadius: 4, background: `oklch(0.62 0.15 ${hue} / 0.06)` }}>
               <div style={{ fontFamily: "'Playfair Display',serif", fontStyle: 'italic',
-              fontSize: 32, color: `oklch(0.62 0.15 ${hue})`, marginBottom: 16 }}>Bedankt!</div>
+              fontSize: 32, color: `oklch(0.62 0.15 ${hue})`, marginBottom: 16 }}>{tr.con_thanks}</div>
               <div style={{ fontFamily: "'DM Sans',sans-serif", fontWeight: 300, fontSize: 15,
               color: 'oklch(0.65 0.03 75)', lineHeight: 1.7 }}>
-                We hebben je bericht ontvangen en nemen zo snel mogelijk contact met je op.
+                {tr.con_thanks_body}
               </div>
               <button onClick={() => setSent(false)} style={{ marginTop: 24,
               fontFamily: "'DM Sans',sans-serif", fontWeight: 400, fontSize: 13,
               letterSpacing: '0.1em', textTransform: 'uppercase',
               color: `oklch(0.62 0.15 ${hue})`, background: 'transparent',
               border: 'none', cursor: 'pointer', textDecoration: 'underline' }}>
-                Nieuw bericht
+                {tr.con_new_msg}
               </button>
             </div> :
 
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               <div style={{ fontFamily: "'Playfair Display',serif", fontStyle: 'italic',
-              fontSize: 22, color: 'oklch(0.82 0.025 75)', marginBottom: 8 }}>Stuur een bericht</div>
+              fontSize: 22, color: 'oklch(0.82 0.025 75)', marginBottom: 8 }}>{tr.con_form_title}</div>
               {[
-            { key: 'naam', label: 'Naam', type: 'text', placeholder: 'Jouw naam' },
-            { key: 'email', label: 'Email', type: 'email', placeholder: 'jouw@email.be' }].
+            { key: 'naam', label: tr.con_name_label, type: 'text', placeholder: tr.con_name_ph },
+            { key: 'email', label: 'Email', type: 'email', placeholder: tr.con_email_ph }].
             map((f) =>
             <div key={f.key}>
                   <label style={{ fontFamily: "'DM Sans',sans-serif", fontWeight: 400, fontSize: 11,
@@ -926,9 +1067,9 @@ function Contact({ accent }) {
               <div>
                 <label style={{ fontFamily: "'DM Sans',sans-serif", fontWeight: 400, fontSize: 11,
                 letterSpacing: '0.14em', textTransform: 'uppercase',
-                color: 'oklch(0.55 0.03 75)', display: 'block', marginBottom: 6 }}>Bericht</label>
+                color: 'oklch(0.55 0.03 75)', display: 'block', marginBottom: 6 }}>{tr.con_msg_label}</label>
                 <textarea
-                placeholder="Jouw bericht..." required rows={5}
+                placeholder={tr.con_msg_ph} required rows={5}
                 value={form.bericht}
                 onChange={(e) => setForm((p) => ({ ...p, bericht: e.target.value }))}
                 onFocus={(e) => e.target.style.borderColor = `oklch(0.62 0.15 ${hue} / 0.6)`}
@@ -947,7 +1088,7 @@ function Contact({ accent }) {
             }}
             onMouseEnter={(e) => {e.target.style.opacity = '0.85';e.target.style.transform = 'translateY(-1px)';}}
             onMouseLeave={(e) => {e.target.style.opacity = '1';e.target.style.transform = 'translateY(0)';}}>
-                Verstuur bericht →
+                {tr.con_submit}
               </button>
             </form>
           }
@@ -1006,16 +1147,19 @@ function Footer({ accent }) {
 /* ─── APP ────────────────────────────────────────────────────── */
 function App() {
   const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  const [lang, setLang] = useState(() => localStorage.getItem('dm-lang') || 'nl');
   const hue = tweaks.accentHue;
+
+  useEffect(() => { localStorage.setItem('dm-lang', lang); }, [lang]);
 
   return (
     <>
-      <Nav accent={hue} />
-      <Hero tweaks={tweaks} />
-      <OverOns accent={hue} />
-      <Openingsuren accent={hue} />
-      <Gallery accent={hue} />
-      <Contact accent={hue} />
+      <Nav accent={hue} lang={lang} setLang={setLang} />
+      <Hero tweaks={tweaks} lang={lang} />
+      <OverOns accent={hue} lang={lang} />
+      <Openingsuren accent={hue} lang={lang} />
+      <Gallery accent={hue} lang={lang} />
+      <Contact accent={hue} lang={lang} />
       <Footer accent={hue} />
 
       <TweaksPanel>
